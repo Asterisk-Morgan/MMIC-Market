@@ -5,35 +5,35 @@ const GAS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbysDQVYLZdBEOX
 const products = [
   {
     id: 1,
-    name: "タクティカル・ウォータープルーフジャケット",
-    category: "apparel",
-    price: 18500,
-    desc: "高強度・撥水仕様のフィールド向けアウター。耐久性に優れたジッパーと多数のポケットを備えています。",
+    name: "メダル",
+    category: "Medal",
+    price: 5000,
+    desc: "直径40mmの高品質なメダル(非塗装)",
     images: [
-      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=500",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500"
+      "メダル.JPG",
+      "メダル_デザイン.png"
     ]
   },
   {
     id: 2,
-    name: "ブラス・ダイキャストコインキーホルダー",
-    category: "accessories",
-    price: 3200,
-    desc: "真鍮古美メッキを施した重厚感のあるキーホルダー。細部まで彫刻されたレリーフが特徴です。",
+    name: "カートリッジ",
+    category: "Cartridge",
+    price: 4500,
+    desc: "高靭性・高耐久レジンを使用したジャストサイズのカートリッジ",
     images: [
-      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500",
-      "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=500"
+      "カートリッジ.png",
+      "プリント直後.PNG"
     ]
   },
   {
     id: 3,
-    name: "レザーペンケース＆ユーティリティポーチ",
-    category: "goods",
-    price: 4800,
-    desc: "植物タンニン鞣しの牛革を使用したポーチ。ツール類や文房具をスマートに収納可能。",
+    name: "メダル＆カートリッジセット",
+    category: "Set",
+    price: 9000,
+    desc: "メダルとカートリッジのセット、500円お得になります",
     images: [
-      "https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?w=500",
-      "https://images.unsplash.com/photo-1585336261026-7f5ed6d1e49b?w=500"
+      "メダルインカートリッジ.jpeg",
+      "カートリッジ(初期型-血錆).jpg"
     ]
   }
 ];
