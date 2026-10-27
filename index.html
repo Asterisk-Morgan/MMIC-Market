@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sample Concept Shop</h1>
+    <button id="view-cart-btn" class="nav-cart-btn">カート (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <!-- カテゴリーフィルター -->
+    <div class="category-filter">
+      <button class="filter-btn active" data-category="all">すべて</button>
+      <button class="filter-btn" data-category="apparel">アパレル</button>
+      <button class="filter-btn" data-category="accessories">アクセサリー</button>
+      <button class="filter-btn" data-category="goods">雑貨</button>
+    </div>
+
+    <!-- 商品一覧グリッド -->
+    <section id="product-grid" class="product-grid"></section>
+  </main>
+
+  <!-- 商品詳細モーダル -->
+  <div id="product-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn" id="modal-close">&times;</button>
+      <div class="gallery">
+        <img id="modal-main-img" src="" alt="商品画像">
+        <div class="thumbnail-list" id="modal-thumbnails"></div>
+      </div>
+      <div class="details">
+        <h2 id="modal-title"></h2>
+        <p class="price" id="modal-price"></p>
+        <p class="desc" id="modal-desc"></p>
+        <button id="add-to-cart-btn" class="btn primary-btn">カートに入れる</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- カート & チェックアウトモーダル -->
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content cart-content">
+      <button class="close-btn" id="cart-close">&times;</button>
+      <h2>ショッピングカート</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <p>合計金額: <span id="cart-total">¥0</span></p>
+      </div>
+
+      <!-- カートに商品がある場合のみ表示される注文フォーム -->
+      <form id="checkout-form" class="checkout-form hidden">
+        <hr>
+        <h3>ご注文手続き (模擬決済)</h3>
+        <label>お名前: <input type="text" id="cust-name" required placeholder="山田 太郎"></label>
+        <label>メールアドレス: <input type="email" id="cust-email" required placeholder="sample@example.com"></label>
+        <button type="submit" id="submit-order-btn" class="btn buy-btn">購入を確定する</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
