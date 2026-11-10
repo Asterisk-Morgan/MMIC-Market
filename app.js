@@ -1,39 +1,39 @@
 // GASウェブアプリのURLをここに貼り付け
-const GAS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbzUQLGpPSMADrfIAWAgXDpr1hsrJnCV82GlfgG1RlMzV-M8fuRv8HPaUS9uWYVns4xemA/exec";
+const GAS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbysDQVYLZdBEOX1_hhccetBfB6oJVDDvYfBHZub2StlykDbFls3j8odIFMuaGtjZrfr3g/exec";
 
 // モック商品データ
 const products = [
   {
     id: 1,
-    name: "SCU&カートリッジセット",
-    category: "apparel",
-    price: 9000,
-    desc: "SCUと高強度カートリッジのセット",
+    name: "メダル",
+    category: "Medal",
+    price: 5000,
+    desc: "直径40mmの高品質なメダル(非塗装)",
     images: [
-      "カートリッジ(初期型完成).jpeg",
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500"
+      "メダル.JPG",
+      "メダル_デザイン.png"
     ]
   },
   {
     id: 2,
-    name: "SCU",
-    category: "accessories",
-    price: 5000,
-    desc: "STLプリンティングのコア。細部まで彫刻されたレリーフが特徴です。",
+    name: "カートリッジ",
+    category: "Cartridge",
+    price: 4500,
+    desc: "高靭性・高耐久レジンを使用したジャストサイズのカートリッジ",
     images: [
-      "コイン3.1(紐穴有).JPG",
-      "コイン3(モノクロ).png"
+      "カートリッジ.png",
+      "プリント直後.PNG"
     ]
   },
   {
     id: 3,
-    name: "カートリッジ",
-    category: "goods",
-    price: 4000,
-    desc: "SCU用に特注された高強度のカートリッジ",
+    name: "メダル＆カートリッジセット",
+    category: "Set",
+    price: 9000,
+    desc: "メダルとカートリッジのセット、500円お得になります",
     images: [
-      "一体型カートリッジ(カラー_刻印無し).png",
-      "https://images.unsplash.com/photo-1585336261026-7f5ed6d1e49b?w=500"
+      "メダルインカートリッジ.jpeg",
+      "カートリッジ(初期型-血錆).jpg"
     ]
   }
 ];
