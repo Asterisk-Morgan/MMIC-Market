@@ -1,5 +1,5 @@
 // GASウェブアプリのURLをここに貼り付け
-const GAS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbysDQVYLZdBEOX1_hhccetBfB6oJVDDvYfBHZub2StlykDbFls3j8odIFMuaGtjZrfr3g/exec";
+const GAS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbzUQLGpPSMADrfIAWAgXDpr1hsrJnCV82GlfgG1RlMzV-M8fuRv8HPaUS9uWYVns4xemA/exec";
 
 // モック商品データ
 const products = [
